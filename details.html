@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post Office Application</title>
+    <link rel="stylesheet" href="details.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/11210/11210312.png" type="image/x-icon">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="main d-none">
+        <div class="region-details">
+            <p class="ip-add"><b>IP Address : <span></span></b></p>
+            <div class="region-grid">
+                <p class="lat"><b>Lat : </b><span></span></p>
+                <p class="city"><b>City : </b><span></span></p>
+                <p class="org"><b>Organisation : </b><span></span></p>
+                <p class="long"><b>Long : </b><span></span></p>
+                <p class="region"><b>Region : </b><span></span></p>
+                <p class="host"><b>Hostname : </b><span></span></p>
+            </div>
+        </div>
+        <div class="current-location">
+            <h1>Your Current Location</h1>
+            <div class="map-img">
+                <!-- <img src="./Images/map.png" alt=""> -->
+                <iframe
+                    src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed"
+                    height="100%"
+                    width="100%"
+                    frameborder="0"
+                    style="border:0"
+                ></iframe>
+            </div>
+        </div>
+        <div class="more-inf">
+            <h1>More Information About You</h1>
+            <div class="more-inf-p">
+                <p class="time-zone"><b>Time Zone : </b><span></span></p>
+                <p class="date-time"><b>Date And Time : </b><span></span></p>
+                <p class="pincode"><b>Pincode : </b><span></span></p>
+                <p class="msg"><b>Message : </b> Number of pincode(s) found : <span></span></p>
+            </div>
+        </div>
+        <div class="po-near-you">
+            <h1>Post Offices Near You</h1>
+            <div class="po-near-content">
+                <div class="search-bar">
+                    <img src="./Images/search.png" alt="">
+                    <input type="search" class="search-input" placeholder="Search By Name">
+                </div>
+                <div class="po-grid">
+                    <div class="po-box">
+                        <p class="name"><b>Name : </b><span></span></p>
+                        <p class="branch-name"><b>Branch Type : </b><span></span></p>
+                        <p class="delivery-status"><b>Delivery Status : </b><span></span></p>
+                        <p class="district"><b>District : </b><span></span></p>
+                        <p class="division"><b>Division : </b><span></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+</body>
+</html>
