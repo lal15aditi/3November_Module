@@ -66,7 +66,7 @@ async function collectInfo(){
     displayPostOffices(postOffices);
     document.querySelector('.search-input').addEventListener('input', (event) => {
         postOffices = postOfficesCopy.filter(e => {
-            return e.Name.toLowerCase().includes(event.target.value.toLowerCase());
+            return (e.Name.toLowerCase().includes(event.target.value.toLowerCase())) || (e.BranchType.toLowerCase().includes(event.target.value.toLowerCase()));
         })
         
         displayPostOffices(postOffices);
